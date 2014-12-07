@@ -7,6 +7,13 @@ body {
   margin: 0 auto;
 }
 
+.embed-container {
+    position: relative;
+    padding-bottom: 62.5%; /* 16/9 ratio */
+    height: 0;
+    overflow: hidden;
+}
+
 .embed-container-16x9 {
     position: relative;
     padding-bottom: 56.25%; /* 16/9 ratio */
@@ -21,6 +28,9 @@ body {
     overflow: hidden;
 }
 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed,
 .embed-container-16x9 iframe,
 .embed-container-16x9 object,
 .embed-container-16x9 embed,
