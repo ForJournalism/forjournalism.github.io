@@ -7,19 +7,26 @@ body {
   margin: 0 auto;
 }
 
-/* Reponsive embed technique from http://amobil.se/2011/11/responsive-embeds/ */
-
-.embed-container {
+.embed-container-16x9 {
     position: relative;
     padding-bottom: 56.25%; /* 16/9 ratio */
-    padding-top: 30px; /* IE6 workaround*/
     height: 0;
     overflow: hidden;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.embed-container-4x3 {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container-16x9 iframe,
+.embed-container-16x9 object,
+.embed-container-16x9 embed,
+.embed-container-4x3 iframe,
+.embed-container-4x3 object,
+.embed-container-4x3 embed {
     position: absolute;
     top: 0;
     left: 0;
